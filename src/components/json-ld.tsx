@@ -1,31 +1,21 @@
-import {DATA} from "@/data/resume";
+import { DATA } from "@/data/resume";
 
 export function JsonLd() {
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: DATA.username,
-    givenName: DATA.username,
-    familyName: DATA.username,
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: DATA.name,
+    givenName: DATA.name,
+    familyName: "杜",
     url: DATA.url,
-    jobTitle: '全栈开发者',
+    jobTitle: "预防医学本科生",
     worksFor: {
-      '@type': 'Organization',
-      name: 'Self-Employed'
+      "@type": "Organization",
+      name: "待补充机构",
     },
-    sameAs: [
-      'https://github.com/hellokaton',
-      'https://x.com/hellokaton'
-    ],
-    knowsAbout: [
-      'Web Development',
-      'React',
-      'Next.js',
-      'TypeScript',
-      'Node.js',
-      'Full Stack Development'
-    ],
-    description: DATA.description
+    sameAs: [DATA.contact.social.GitHub.url],
+    knowsAbout: DATA.skills,
+    description: DATA.description,
   };
 
   return (

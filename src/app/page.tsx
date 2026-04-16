@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: DATA.username,
     description: DATA.description,
-    creator: "@" + "hellokaton",
+    creator: DATA.contact.social.GitHub.url,
     images: [`${DATA.url}/portfolio.png`],
   },
 };

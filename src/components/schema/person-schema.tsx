@@ -8,34 +8,29 @@ export function PersonSchema() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: DATA.username,
+          name: DATA.name,
           alternateName: [DATA.username],
           description: DATA.description,
           image: `${DATA.url}/portfolio.png`,
           url: DATA.url,
-          sameAs: [
-            DATA.contact.social.GitHub.url,
-            DATA.contact.social.X.url,
-            DATA.contact.social.Zhihu.url,
-            DATA.contact.social.Youtube.url,
-          ],
-          jobTitle: "Full Stack Developer",
+          sameAs: [DATA.contact.social.GitHub.url],
+          jobTitle: "预防医学本科生",
           worksFor: {
             "@type": "Organization",
-            name: "Freelance"
+            name: "待补充机构",
           },
           alumniOf: {
             "@type": "CollegeOrUniversity",
-            name: "Trident Academy Of Technology"
+            name: "大连医科大学",
           },
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Odisha",
-            addressCountry: "India"
+            addressLocality: "大连",
+            addressCountry: "中国",
           },
           email: DATA.contact.email,
-          knowsAbout: DATA.skills
-        })
+          knowsAbout: DATA.skills,
+        }),
       }}
     />
   );
