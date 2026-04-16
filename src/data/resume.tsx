@@ -5,7 +5,7 @@ export const DATA = {
   name: "katon",
   username: "hellokaton",
   initials: "PN",
-  url: "https://hellokaton.me",
+  url: "https://meet.10k.ren",
   location: "China",
   locationLink: "https://www.google.com/maps/place/china",
   description: "热爱编程的全栈开发者，喜欢分享技术，正在独立开发的路上前行。",
