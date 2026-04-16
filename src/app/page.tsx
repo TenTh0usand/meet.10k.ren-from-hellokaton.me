@@ -171,25 +171,25 @@ export default function Page() {
             <h2 className="text-xl font-medium font-dingtalk">联系方式</h2>
             <h2 className="text-md font-medium">有想法？发邮件给我吧</h2>
             <a
-              href="mailto:hellokaton@gmail.com"
+              href={`mailto:${DATA.contact.email}`}
               className="flex items-center gap-2 underline underline-offset-4 hover:opacity-70 transition-opacity"
             >
               <Icons.email className="size-4" />
-              hellokaton@gmail.com
+              {DATA.contact.email}
             </a>
 
             <div className="mt-8">
               <h2 className="text-md font-medium font-dingtalk">
-                或者来 X 上和我聊聊天
+                或者先看看我的主页占位
               </h2>
 
               <a
-                href={DATA.contact.social.X.url}
+                href={DATA.contact.social.PlaceholderA.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 px-4 py-2 rounded-md bg-foreground text-background hover:opacity-90 transition-opacity"
               >
-                关注 𝕏
+                打开主页
               </a>
             </div>
           </div>

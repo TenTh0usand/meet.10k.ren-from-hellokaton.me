@@ -16,7 +16,7 @@ export const DATA = {
     "- 姓名：杜鹏吉\n" +
     "- 性别：男，年龄：22\n" +
     "- 电话：13342202042\n" +
-    "- 邮箱：tenth0usand@outlook.com\n" +
+    "- 邮箱：wilsondu000@163.com\n" +
     "\n" +
     "**教育经历**  \n" +
     ">\n\n" +
@@ -87,7 +87,7 @@ export const DATA = {
     { href: "/projects", icon: FolderIcon, label: "经历" },
   ],
   contact: {
-    email: "tenth0usand@outlook.com",
+    email: "wilsondu000@163.com",
     social: {
       GitHub: {
         name: "GitHub",
@@ -97,7 +97,7 @@ export const DATA = {
       },
       Email: {
         name: "邮箱",
-        url: "mailto:tenth0usand@outlook.com",
+        url: "mailto:wilsondu000@163.com",
         icon: Icons.email,
         navbar: true,
       },
